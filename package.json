@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "sass": "^1.54.3",
+    "vite": "^3.0.4"
+  },
+  "scripts": {
+    "dev": "yarn run sass -w . & yarn run vite"
+  },
+  "name": "cipher",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Domenic-MZS <domenicoenriquemeza20014@gmail.com>",
+  "license": "MIT",
+  "private": true
+}

@@ -1,0 +1,15 @@
+.btn {
+  display: inline;
+  border: 1px solid var(--blue-500);
+  border-radius: var(--size-200);
+  padding: 0.25em 1em;
+  transition: transform 0.2s ease-in-out;
+
+  &:hover,
+  &:focus,
+  &:active {
+    cursor: pointer;
+    border: 1px solid var(--blue-400);
+    transform: scale(1.012);
+  }
+}

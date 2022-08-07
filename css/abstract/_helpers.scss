@@ -1,0 +1,30 @@
+// BLUE BACKGROUND COLORS
+.bg-blue-100,
+.bg-blue {
+  background-color: var(--blue-100);
+}
+.bg-blue-200 {
+  background-color: var(--blue-200);
+}
+.bg-blue-300 {
+  background-color: var(--blue-300);
+}
+.bg-blue-400 {
+  background-color: var(--blue-400);
+}
+.bg-blue-500 {
+  background-color: var(--blue-500);
+}
+
+.fc-white {
+  color: var(--fc-white);
+}
+
+.unselectable {
+  pointer-events: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+  -ms-user-select: none;
+}

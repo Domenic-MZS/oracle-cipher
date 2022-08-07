@@ -1,0 +1,25 @@
+.result {
+  height: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  padding: var(--size-300);
+  margin-top: var(--size-300);
+  background-color: var(--bg-white);
+  border-radius: var(--size-300);
+
+  &__title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  &__text {
+    text-align: center;
+    font-size: smaller;
+  }
+
+  &__hero {
+    margin-inline: auto;
+    display: none;
+  }
+}

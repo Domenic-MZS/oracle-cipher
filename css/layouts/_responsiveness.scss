@@ -1,0 +1,44 @@
+.even-columns {
+  gap: 1.5rem;
+}
+
+.container {
+  --padding: var(--size-300);
+  --max-width: 67rem;
+
+  width: min(70rem, 100% - var(--padding) * 2);
+  margin-inline: auto;
+}
+
+.even-columns {
+  display: grid;
+}
+
+@media screen and (min-width: 26em) {
+  .results {
+    .result__hero {
+      display: block;
+    }
+  }
+
+  .content .actions {
+    grid-auto-flow: column;
+  }
+}
+
+@media screen and (min-width: 50em) {
+  .even-columns {
+    grid-auto-flow: column;
+    place-items: center;
+    gap: 5em;
+  }
+
+  .content {
+    padding-top: 2rem;
+
+    .actions {
+      padding-top: 1.3rem;
+      grid-auto-flow: row;
+    }
+  }
+}

@@ -62,6 +62,8 @@ section.results {
 }
 
 .result {
+  max-width: 25rem;
+  max-height: 23rem;
   height: 100%;
   border: 1px solid rgba(0, 0, 0, 0.25);
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
@@ -80,6 +82,9 @@ section.results {
 .result__text {
   text-align: center;
   font-size: smaller;
+  word-break: break-all;
+  max-height: 15rem;
+  overflow-y: auto;
 }
 .result__hero {
   margin-inline: auto;
@@ -92,6 +97,7 @@ section.results {
 
 .even-columns {
   gap: 1.5rem;
+  grid-auto-columns: 0.975fr 1.1fr;
 }
 
 .container {

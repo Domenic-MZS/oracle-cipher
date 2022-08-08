@@ -30,6 +30,10 @@ section.content .actions {
   gap: var(--size-200);
 }
 
+section.results {
+  padding-bottom: var(--size-800);
+}
+
 .btn {
   display: inline;
   border: 1px solid var(--blue-500);
@@ -65,6 +69,8 @@ section.content .actions {
   margin-top: var(--size-300);
   background-color: var(--bg-white);
   border-radius: var(--size-300);
+  display: grid;
+  place-items: center;
 }
 .result__title {
   font-size: 1.2rem;
@@ -78,6 +84,10 @@ section.content .actions {
 .result__hero {
   margin-inline: auto;
   display: none;
+}
+.result button {
+  margin-top: var(--size-300);
+  width: 80%;
 }
 
 .even-columns {

@@ -6,6 +6,8 @@
   margin-top: var(--size-300);
   background-color: var(--bg-white);
   border-radius: var(--size-300);
+  display: grid;
+  place-items: center;
 
   &__title {
     font-size: 1.2rem;
@@ -21,5 +23,10 @@
   &__hero {
     margin-inline: auto;
     display: none;
+  }
+
+  button {
+    margin-top: var(--size-300);
+    width: 80%;
   }
 }

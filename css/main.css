@@ -81,7 +81,8 @@ section.results {
 .result__text {
   text-align: center;
   font-size: smaller;
-  word-break: break-all;
+  width: 100%;
+  word-break: break-word;
   max-height: 15rem;
   overflow-y: auto;
 }

@@ -4,7 +4,8 @@
     "vite": "^3.0.4"
   },
   "scripts": {
-    "dev": "yarn run sass -w . & yarn run vite"
+    "dev": "yarn run sass -w . & yarn run vite",
+    "build": "yarn vite build --base ./"
   },
   "name": "cipher",
   "version": "1.0.0",

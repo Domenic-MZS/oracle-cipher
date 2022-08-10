@@ -1,3 +1,5 @@
+import cipher from "./cipher";
+
 const snippet = document.getElementById("result_snippet").content;
 const results = document.getElementsByClassName("results")[0];
 const buttons = document.getElementsByClassName("actions")[0];

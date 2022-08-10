@@ -39,3 +39,5 @@ function decipher(text) {
 
   return result;
 }
+
+export default cipher;

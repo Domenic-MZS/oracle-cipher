@@ -1,6 +1,5 @@
 # Welcome to cipher 👋
 
-[![Version](https://img.shields.io/npm/v/cipher.svg)](https://www.npmjs.com/package/cipher)
 ![Prerequisite](https://img.shields.io/badge/npm-%3E%3D8.14.x-blue.svg)
 ![Prerequisite](https://img.shields.io/badge/node-%3E%3D18.6.0-blue.svg)
 [![Documentation](https://img.shields.io/badge/documentation-yes-brightgreen.svg)](https://github.com/Domenic-MZS/oracle-cipher#readme)

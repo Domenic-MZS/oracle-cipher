@@ -1,4 +1,4 @@
-import cipher from "./cipher.js";
+import { cipher, decipher } from "./cipher.js";
 
 const snippet = document.getElementById("result_snippet").content;
 const results = document.getElementsByClassName("results")[0];

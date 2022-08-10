@@ -8,9 +8,21 @@
     "build": "yarn vite build --base ./"
   },
   "name": "cipher",
-  "version": "1.0.0",
-  "main": "index.js",
+  "version": "1.0.1",
+  "description": "Oracle encoder/decoder challenge implementation",
   "author": "Domenic-MZS <domenicoenriquemeza20014@gmail.com>",
+  "homepage": "git+https://github.com/Domenic-MZS/oracle-cipher#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Domenic-MZS/oracle-cipher.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Domenic-MZS/oracle-cipher/issues"
+  },
+  "engines": {
+    "npm": ">=8.14.x",
+    "node": ">=18.6.0"
+  },
   "license": "MIT",
   "private": true
 }

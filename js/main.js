@@ -5,7 +5,27 @@ const results = document.getElementsByClassName("results")[0];
 const buttons = document.getElementsByClassName("actions")[0];
 const textarea = document.getElementById("input-message");
 
-const copyText = async (text) => await navigator.clipboard.writeText(text);
+async function copyText(text) {
+  let query = { name: "clipboard-write" };
+  let clipPerm = await navigator.permissions?.query(query);
+
+  if (navigator.clipboard && clipPerm.state !== "denied") {
+    return await navigator.clipboard.writeText(text);
+  }
+
+  // create holder and inject text to copy
+  let holder = document.createElement("textarea");
+  holder.textContent = text;
+  holder.style = { ...holder.style, display: "none", position: "fixed" };
+
+  // focus and select the holder 
+  document.body.appendChild(holder);
+  holder.focus() || holder.select();
+
+  // yank and dispose the holder
+  document.execCommand("copy"); // deprecated
+  holder.remove();
+}
 
 const addResult = (text) => {
   results.childNodes.forEach((node) => node.remove());

@@ -1,43 +1,36 @@
 const __WORDS_MAP = {
-  "a": "enter",
-  "e": "imes",
-  "i": "ai",
-  "o": "abor",
-  "u": "ufat",
-}
+  a: "enter",
+  e: "imes",
+  i: "ai",
+  o: "abor",
+  u: "ufat",
+};
 
 function cipher(text) {
-  if(typeof(text) !== 'string') return "";
+  if (typeof text !== "string") return "";
 
-  var result = "";
-  for (let i = 0; i < text.length; i++) {
-    // get character
-    let character = text[i];
+  return text.replace(/[a-z]/gi, (match) => {
+    let isUppercase = match === match.toUpperCase();
+    let encodedMatch = __WORDS_MAP[match.toLowerCase()] ?? match;
 
-    // check case
-    let isUppercase = character === character.toUpperCase();
-
-    // if it's uppercase keep uppercase else return as it is
-    character = __WORDS_MAP[character.toLowerCase()] || character;
-
-    result += isUppercase ? character.toUpperCase() : character;
-  }
-
-  return result;
+    return isUppercase ? encodedMatch.toUpperCase() : encodedMatch;
+  });
 }
 
 function decipher(text) {
-  if(typeof(text) !== 'string') return "";
+  if (typeof text !== "string") return "";
 
   var result = text;
-  for(var key in __WORDS_MAP) {
-    var value = __WORDS_MAP[key];
+  for (let key in __WORDS_MAP) {
+    let value = __WORDS_MAP[key];
+    let pattern = RegExp(value, "gi");
 
-    result = result.replaceAll(value, key);
-    result = result.replaceAll(value.toUpperCase(), key.toUpperCase())
+    result = result.replace(pattern, (match) =>
+      match === match.toUpperCase() ? key.toUpperCase() : key
+    );
   }
 
   return result;
 }
 
-export {cipher, decipher};
+export { cipher, decipher };

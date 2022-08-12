@@ -11,9 +11,9 @@ function cipher(text) {
 
   return text.replace(/[a-z]/gi, (match) => {
     let isUppercase = match === match.toUpperCase();
-    let match = __WORDS_MAP[match.toLowerCase()] ?? match;
+    let encodedMatch = __WORDS_MAP[match.toLowerCase()] ?? match;
 
-    return isUppercase ? match.toUpperCase() : match;
+    return isUppercase ? encodedMatch.toUpperCase() : encodedMatch;
   });
 }
 

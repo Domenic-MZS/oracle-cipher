@@ -1,14 +1,6 @@
 {
-  "dependencies": {
-    "sass": "^1.54.3",
-    "vite": "^3.0.4"
-  },
-  "scripts": {
-    "dev": "yarn run sass -w . & yarn run vite",
-    "build": "yarn vite build --base ./"
-  },
-  "name": "cipher",
-  "version": "1.0.1",
+  "name": "cipher-svelte",
+  "version": "2.0.0",
   "description": "Oracle encoder/decoder challenge implementation",
   "author": "Domenic-MZS <domenicoenriquemeza20014@gmail.com>",
   "homepage": "git+https://github.com/Domenic-MZS/oracle-cipher#readme",
@@ -24,5 +16,38 @@
     "node": ">=18.6.0"
   },
   "license": "MIT",
-  "private": true
+  "private": true,
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build",
+    "package": "svelte-kit package",
+    "preview": "vite preview",
+    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
+    "lint": "prettier --check --plugin-search-dir=. . && eslint .",
+    "format": "prettier --write --plugin-search-dir=. ."
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-auto": "next",
+    "@sveltejs/adapter-static": "^1.0.0-next.39",
+    "@sveltejs/kit": "next",
+    "@typescript-eslint/eslint-plugin": "^5.27.0",
+    "@typescript-eslint/parser": "^5.27.0",
+    "autoprefixer": "^10.4.7",
+    "eslint": "^8.16.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-svelte3": "^4.0.0",
+    "postcss": "^8.4.14",
+    "postcss-load-config": "^4.0.1",
+    "prettier": "^2.6.2",
+    "prettier-plugin-svelte": "^2.7.0",
+    "sass": "^1.54.4",
+    "svelte": "^3.44.0",
+    "svelte-check": "^2.7.1",
+    "svelte-preprocess": "^4.10.7",
+    "tslib": "^2.3.1",
+    "typescript": "^4.7.4",
+    "vite": "^3.0.0"
+  },
+  "type": "module"
 }

@@ -1,71 +1,38 @@
-# Welcome to cipher 👋
+# create-svelte
 
-![Prerequisite](https://img.shields.io/badge/npm-%3E%3D8.14.x-blue.svg)
-![Prerequisite](https://img.shields.io/badge/node-%3E%3D18.6.0-blue.svg)
-[![Documentation](https://img.shields.io/badge/documentation-yes-brightgreen.svg)](https://github.com/Domenic-MZS/oracle-cipher#readme)
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/Domenic-MZS/oracle-cipher/graphs/commit-activity)
+Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
 
-> Oracle encoder/decoder challenge implementation
+## Creating a project
 
-### 🏠 [Homepage](git+https://github.com/Domenic-MZS/oracle-cipher#readme)
+If you're seeing this, you've probably already done this step. Congrats!
 
-### ✨ [Demo](https://domenic-mzs.github.io/oracle-cipher/)
+```bash
+# create a new project in the current directory
+npm create svelte@latest
 
-## Prerequisites
-
-- npm >=8.14.x
-- node >=18.6.0
-
-## Install
-
-```sh
-yarn install
+# create a new project in my-app
+npm create svelte@latest my-app
 ```
 
-or
+## Developing
 
-```sh
-npm install
-```
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
-## Development Server
-
-```sh
-yarn run dev
-```
-
-or
-
-```sh
+```bash
 npm run dev
+
+# or start the server and open the app in a new browser tab
+npm run dev -- --open
 ```
 
-## Build
+## Building
 
-```sh
-yarn run build
-```
+To create a production version of your app:
 
-or
-
-```sh
+```bash
 npm run build
 ```
 
-## Author
+You can preview the production build with `npm run preview`.
 
-👤 **Domenic-MZS <domenicoenriquemeza20014@gmail.com>**
-
-- Github: [@Domenic-MZS](https://github.com/Domenic-MZS)
-
-## 🤝 Contributing
-
-Contributions, issues and feature requests are welcome!
-
-Feel free to check [issues page](https://github.com/Domenic-MZS/oracle-cipher/issues). You can also take a look at the [contributing guide](https://github.com/Domenic-MZS/oracle-cipher/blob/master/CONTRIBUTING.md).
-
-## Show your support
-
-Give a ⭐️ if this project helped you!
-
----
+> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.

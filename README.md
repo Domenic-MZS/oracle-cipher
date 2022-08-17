@@ -5,18 +5,32 @@
 [![Documentation](https://img.shields.io/badge/documentation-yes-brightgreen.svg)](https://github.com/Domenic-MZS/oracle-cipher#readme)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/Domenic-MZS/oracle-cipher/graphs/commit-activity)
 
-> Oracle encoder/decoder challenge implementation
+## <img src="https://emojipedia-us.s3.amazonaws.com/source/microsoft-teams/337/rocket_1f680.png" width="30" /> Description
+The challenge consists on building a website that can cipher and decipher a given input A.K.A. message, mapping each vowel into a new pattern of letters... The algorythm should only change ASCII letters.
 
-### 🏠 [Homepage](git+https://github.com/Domenic-MZS/oracle-cipher#readme)
 
 ### ✨ [Demo](https://domenic-mzs.github.io/oracle-cipher/)
+[<img src="https://user-images.githubusercontent.com/75044136/185028141-55e3be6e-2506-4fba-b45e-14d4c90171ff.png" width="80%" style="margin-inline: auto;" />](https://domenic-mzs.github.io/oracle-cipher/)
 
-## Prerequisites
 
-- npm >=8.14.x
-- node >=18.6.0
+## <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/whatsapp/326/magnifying-glass-tilted-left_1f50d.png" width="30" /> Vowels Map
+The cipher describes itself as:
+| Input (case insensitive) | Output (case insensitive)|
+| :--: | :--: |
+| a | enter |
+| e | imes |
+| i | ai |
+| o | abor |
+| u | ufat |
 
-## Install
+> Anything else will be ignored
+
+## <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/310/clipboard_1f4cb.png" width="30" /> Prerequisites
+
+- `npm >= 8.14.x`
+- `node >= 18.6.0`
+
+## <img src="https://emojipedia-us.s3.amazonaws.com/source/skype/289/wrench_1f527.png" width="30" /> Install
 
 ```sh
 yarn install
@@ -28,7 +42,7 @@ or
 npm install
 ```
 
-## Development Server
+## <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/facebook/65/globe-with-meridians_1f310.png" width="30" /> Development Server
 
 ```sh
 yarn run dev
@@ -40,7 +54,7 @@ or
 npm run dev
 ```
 
-## Build
+## <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/toss-face/342/building-construction_1f3d7-fe0f.png" width="30" /> Build
 
 ```sh
 yarn run build
